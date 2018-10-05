@@ -1,7 +1,6 @@
 from random import randint
 file = open("characters.txt","r")
 
-
 characters = []
 character = ""
 
@@ -13,11 +12,8 @@ for line in file:
         character = ""
 file.close()
 
+def rnd_character():
+    return characters[randint(1, len(characters)-1)]
 
-print("Your character is\n")
-
-randInt = randint(1, 16)
-
-print(characters[randInt])
-
-print("\n\n\nAscii art source:\nwww.ascii-art.de")
+def starwarslogo():
+    return characters[0]
