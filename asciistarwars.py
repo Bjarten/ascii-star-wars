@@ -20,3 +20,6 @@ def starwarslogo():
 
 def all_characters():
     return characters
+
+def character(nr):
+    return characters[nr]
